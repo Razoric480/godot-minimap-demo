@@ -2,7 +2,7 @@
 
 By [Francois Belair](https://twitter.com/Razoric480)
 
-This project was inspired by a question asked on the GDQuest discord on how to recreate the effect as in [this tutorial]((https://unitycodemonkey.com/video.php?v=kWhOMJMihC0)) for Unity by [CodeMonkey](https://unitycodemonkey.com), where a simpler and more limited world representation is recreated in a circular minimap. The art in this project has been taken from those project files, though the game was not coded - just some basic movement to show the minimap.
+This project was inspired by a question asked on the GDQuest discord on how to recreate the effect as in [this tutorial](https://unitycodemonkey.com/video.php?v=kWhOMJMihC0) for Unity by [CodeMonkey](https://unitycodemonkey.com), where a simpler and more limited world representation is recreated in a circular minimap. The art in this project has been taken from those project files, though the game was not coded - just some basic movement to show the minimap.
 
 It is not a tutorial persay, but an explanation with a demo.
 
