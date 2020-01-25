@@ -1,4 +1,7 @@
 extends KinematicBody2D
+# A simple player movement class.
+# Of particular note is the player adding one of its sprites as a clone in the minimap,
+# and adding the camera as a clone to the minimap to keep track of the player
 
 
 export var speed := 350.0

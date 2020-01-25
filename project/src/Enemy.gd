@@ -1,4 +1,6 @@
 extends KinematicBody2D
+# Simply goes up to the player unless that would bring them too close
+# Of particular note is adding a sprite of itself as a clone on the minimap
 
 
 export var speed := 350.0

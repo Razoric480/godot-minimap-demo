@@ -1,4 +1,6 @@
 extends Sprite
+# Spawns a new enemy into the world at a slightly randomized time.
+# Especially of note is calling the minimap to add a clone of itself as a spawner
 
 
 onready var timer := $Timer

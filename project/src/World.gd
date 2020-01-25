@@ -1,4 +1,5 @@
 extends Node2D
+# Helper access for spawners to keep track of spawned enemies
 
 
 export var enemy_count_max := 10

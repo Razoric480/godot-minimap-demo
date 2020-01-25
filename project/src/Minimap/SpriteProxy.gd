@@ -1,4 +1,5 @@
 extends "Proxy.gd"
+# Specialized proxy that takes a sprite and adds it as a child for display purposes
 
 
 var sprite: Sprite

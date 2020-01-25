@@ -1,4 +1,5 @@
 extends Viewport
+# Holds utility functions to add and configure clones onto this alternate viewport world
 
 
 var SpriteProxy := preload("SpriteProxy.gd")
