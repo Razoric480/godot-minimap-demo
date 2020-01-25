@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://assets/Grass.jpg" type="Texture" id=1]
 [ext_resource path="res://assets/BackgroundSprites_1.png" type="Texture" id=2]
 [ext_resource path="res://src/Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/SwordTwoHandedBack.png" type="Texture" id=4]
 [ext_resource path="res://src/Tent.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/World.gd" type="Script" id=6]
 [ext_resource path="res://src/Enemy.tscn" type="PackedScene" id=7]
@@ -12,13 +11,13 @@
 script = ExtResource( 6 )
 enemy_scene = ExtResource( 7 )
 
-[node name="Background" type="Sprite" parent="."]
+[node name="Grass" type="Sprite" parent="."]
 position = Vector2( 512, 300 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 5427, 4260 )
 
-[node name="Doodads" type="Sprite" parent="."]
+[node name="Tufts" type="Sprite" parent="."]
 position = Vector2( 512, 300 )
 texture = ExtResource( 2 )
 region_enabled = true
@@ -27,54 +26,34 @@ region_rect = Rect2( 0, 0, 5427, 4260 )
 [node name="Player" parent="." groups=[
 "Player",
 ] instance=ExtResource( 3 )]
+position = Vector2( 512, 300 )
 speed = 450.0
 
-[node name="Camera2D" parent="Player" index="1"]
-zoom = Vector2( 1.5, 1.5 )
-limit_left = -2199
-limit_top = -1830
-limit_right = 3225
-limit_bottom = 2427
-drag_margin_top = 0.3
-drag_margin_bottom = 0.3
+[node name="Tents" type="Node2D" parent="."]
 
-[node name="Body" type="Sprite" parent="Player"]
-texture = ExtResource( 4 )
-region_enabled = true
-region_rect = Rect2( 22, 146, 83, 108 )
-
-[node name="Head" type="Sprite" parent="Player"]
-position = Vector2( 3.408, -71.009 )
-scale = Vector2( 0.75, 0.75 )
-texture = ExtResource( 4 )
-region_enabled = true
-region_rect = Rect2( 30, 8, 72, 103 )
-
-[node name="Tent" parent="." instance=ExtResource( 5 )]
+[node name="Tent" parent="Tents" instance=ExtResource( 5 )]
 position = Vector2( -243.875, -252.284 )
 
-[node name="Tent2" parent="." instance=ExtResource( 5 )]
+[node name="Tent2" parent="Tents" instance=ExtResource( 5 )]
 position = Vector2( 1282.45, -483.545 )
 
-[node name="Tent3" parent="." instance=ExtResource( 5 )]
+[node name="Tent3" parent="Tents" instance=ExtResource( 5 )]
 position = Vector2( -1286.65, -1177.33 )
 
-[node name="Tent4" parent="." instance=ExtResource( 5 )]
+[node name="Tent4" parent="Tents" instance=ExtResource( 5 )]
 position = Vector2( 2435.65, -1454.46 )
 
-[node name="Tent5" parent="." instance=ExtResource( 5 )]
+[node name="Tent5" parent="Tents" instance=ExtResource( 5 )]
 position = Vector2( 679.981, -1363.17 )
 
-[node name="Tent6" parent="." instance=ExtResource( 5 )]
+[node name="Tent6" parent="Tents" instance=ExtResource( 5 )]
 position = Vector2( -1138.89, 1010.5 )
 
-[node name="Tent7" parent="." instance=ExtResource( 5 )]
+[node name="Tent7" parent="Tents" instance=ExtResource( 5 )]
 position = Vector2( 97.0986, 1867.27 )
 
-[node name="Tent8" parent="." instance=ExtResource( 5 )]
+[node name="Tent8" parent="Tents" instance=ExtResource( 5 )]
 position = Vector2( 2590.15, 2070.92 )
 
-[node name="Tent9" parent="." instance=ExtResource( 5 )]
+[node name="Tent9" parent="Tents" instance=ExtResource( 5 )]
 position = Vector2( 1972.15, 968.363 )
-
-[editable path="Player"]

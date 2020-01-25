@@ -9,11 +9,8 @@ func _ready() -> void:
 	timer.connect("timeout", self, "_on_Timer_timeout")
 	timer.start()
 	
-	var map_viewport: Viewport = get_tree().root.find_node("Minimap", true, false)
-	var icon := MapProxy.new()
-	icon.mirror_master = self
-	icon.texture = texture
-	map_viewport.add_child(icon)
+	var map_viewport: Viewport = get_tree().get_nodes_in_group("Map")[0]
+	map_viewport.add_sprite_clone(self, self, 1)
 
 
 func _on_Timer_timeout() -> void:

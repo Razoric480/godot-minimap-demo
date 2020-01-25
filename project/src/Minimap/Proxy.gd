@@ -1,5 +1,4 @@
-extends Sprite
-class_name MapProxy
+extends Node2D
 
 
 var mirror_master: Node2D
